@@ -4,3 +4,9 @@
     build:
       context: .
       dockerfile: TodoApi/Dockerfile
+
+  todoapiwithodata:
+    image: todoapiwithodata
+    build:
+      context: .
+      dockerfile: TodoApiWithOData/Dockerfile
