@@ -12,10 +12,11 @@ public class TodoItemsController(TodoContext context) : ControllerBase
 {
     // GET: api/TodoItems
     [HttpGet]
-    public async Task<List<TodoItem>> GetTodoItems()
-    {
-        return await context.TodoItems.ToListAsync();
-    }
+    public async Task<List<TodoItemDTO>> GetTodoItems()
+    { 
+        var todoItems = await context.TodoItems.ToListAsync();
+        var todoItemDTOs = todoItems.Select(todoItem => (TodoItemDTO)todoItem).ToList();
+        return todoItemDTOs;    }
 
     // GET: api/TodoItems/5
     // <snippet_GetByID>
