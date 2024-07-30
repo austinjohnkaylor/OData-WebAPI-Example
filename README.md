@@ -18,7 +18,8 @@ was used as a reference to create the API.
 
 ## TodoApi.OData
 This project contains the OData configuration for the TodoApi project. It allows you to expand the functionality of the API by adding OData query options to the API endpoints.
-This [Microsoft Docs Tutorial](https://learn.microsoft.com/en-us/odata/webapi/first-odata-api) was used as a reference to create the OData-based API.
+It also follows the same API structure as the TodoApi project, but with the added functionality of OData query options.
+This [Microsoft Docs Tutorial](https://learn.microsoft.com/en-us/odata/webapi/first-odata-api) was used as a reference to create the OData-based API. Also based off of [this tutorial](https://learn.microsoft.com/en-us/odata/webapi-8/getting-started?tabs=net60%2Cvisual-studio-2022%2Cvisual-studio) for OData v8.
 ### API Structure
 | API Endpoint                    | Description                    | Request Body | Response Body       |
 |---------------------------------|--------------------------------|--------------|---------------------|
