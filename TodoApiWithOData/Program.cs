@@ -1,4 +1,8 @@
-var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.OData;
+using Microsoft.OData.ModelBuilder;
+using TodoApiWithOData.Models;
+
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -7,7 +11,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+var modelBuilder = new ODataConventionModelBuilder();
+modelBuilder.EntityType<Order>();
+modelBuilder.EntitySet<Customer>("Customers");
+
+builder.Services.AddControllers().AddOData(
+    options => options.Select().Filter().OrderBy().Expand().Count().SetMaxTop(null).AddRouteComponents(
+        "odata",
+        modelBuilder.GetEdmModel()));
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

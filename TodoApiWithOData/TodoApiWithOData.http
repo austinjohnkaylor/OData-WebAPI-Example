@@ -1,6 +1,6 @@
 @TodoApiWithOData_HostAddress = http://localhost:5100
 
-GET {{TodoApiWithOData_HostAddress}}/weatherforecast/
+GET {{TodoApiWithOData_HostAddress}}//
 Accept: application/json
 
 ###
