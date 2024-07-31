@@ -29,6 +29,6 @@ This [Microsoft Docs Tutorial](https://learn.microsoft.com/en-us/odata/webapi/fi
 | PUT /api/todoitems/{id}	        | Update a to-do item by id      | To-do item	  | None                |
 | DELETE /api/todoitems/{id}    	 | Delete a to-do item by id      | None         | None                |
 
-## BasicCrudApi
+## BasicCrudApiWithOData
 This project is a simple CRUD-based API. 
 This project is based off of the [Microsoft Docs Tutorial]https://learn.microsoft.com/en-us/odata/webapi-8/tutorials/basic-crud?tabs=net60%2Cvisual-studio-2022%2Cvisual-studio%2Cvs2022) Basic CRUD in ASP.NET Core OData 8

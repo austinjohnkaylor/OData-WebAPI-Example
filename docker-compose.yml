@@ -10,3 +10,9 @@
     build:
       context: .
       dockerfile: TodoApiWithOData/Dockerfile
+
+  basiccrudapiwithodata:
+    image: basiccrudapiwithodata
+    build:
+      context: .
+      dockerfile: BasicCrudApiWithOData/Dockerfile
