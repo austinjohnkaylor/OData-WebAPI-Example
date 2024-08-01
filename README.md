@@ -30,5 +30,6 @@ This [Microsoft Docs Tutorial](https://learn.microsoft.com/en-us/odata/webapi/fi
 | DELETE /api/todoitems/{id}    	 | Delete a to-do item by id      | None         | None                |
 
 ## BasicCrudApiWithOData
-This project is a simple CRUD-based API. 
-This project is based off of the [Microsoft Docs Tutorial]https://learn.microsoft.com/en-us/odata/webapi-8/tutorials/basic-crud?tabs=net60%2Cvisual-studio-2022%2Cvisual-studio%2Cvs2022) Basic CRUD in ASP.NET Core OData 8
+- This project is a simple CRUD-based API. 
+- This project is based off of the [Microsoft Docs Tutorial: Basic CRUD in ASP.NET Core OData 8](https://learn.microsoft.com/en-us/odata/webapi-8/tutorials/basic-crud?tabs=net60%2Cvisual-studio-2022%2Cvisual-studio%2Cvs2022)
+- This project is also based off of the [Microsoft Docs Tutorial: Implementing a Custom Skip Token Handler](https://learn.microsoft.com/en-us/odata/webapi-8/tutorials/custom-skiptokenhandler?tabs=net60%2Cvisual-studio)
