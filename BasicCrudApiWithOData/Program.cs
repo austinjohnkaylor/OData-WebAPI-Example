@@ -18,7 +18,7 @@ modelBuilder.EnumType<CustomerType>();
 modelBuilder.EntitySet<Customer>("Customers");
 
 builder.Services.AddControllers().AddOData(
-    options => options.EnableQueryFeatures(null).AddRouteComponents(
+    options => options.EnableQueryFeatures().SkipToken().AddRouteComponents(
         routePrefix: "odata",
         model: modelBuilder.GetEdmModel()));
 

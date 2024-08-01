@@ -1,6 +1,7 @@
 ﻿using BasicCrudApiWithOData.EntityFrameworkCore;
 using BasicCrudApiWithOData.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,7 @@ namespace BasicCrudApiWithOData.Controllers;
 
 public class CustomersController(BasicCrudDbContext db) : ODataController
 {
+    [EnableQuery(PageSize = 2)]
     public ActionResult<IQueryable<Customer>> Get()
     {
         return Ok(db.Customers);
